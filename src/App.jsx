@@ -1,6 +1,6 @@
 // 1. Import useState alongside React
 import React, { useState } from 'react';
-
+import parent from './parent';
 function Greeting(props) {
   return <h1>Hello, {props.name}!</h1>;
 }
@@ -35,6 +35,7 @@ function App() {
       >
         Click Me!
       </button>
+      <parent />
     </div>
   );
 }
